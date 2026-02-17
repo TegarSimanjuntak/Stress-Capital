@@ -5,9 +5,6 @@
 dist/
 build/
 
-# Abaikan file environment/rahasia
-.env
-.env.local
 
 # File log
 npm-debug.log*
