@@ -1,0 +1,80 @@
+/* Reset dasar untuk halaman ini */
+.login-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Efek Kaca (Glassmorphism) */
+.login-card {
+  background: rgba(255, 255, 255, 0.1); /* Transparan */
+  backdrop-filter: blur(10px); /* Efek Blur di belakang kaca */
+  -webkit-backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  color: white;
+}
+
+.login-card h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Input Styles */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+}
+
+/* Button Styles */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #646cff; /* Warna ungu Vite, cocok sama background */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #535bf2;
+}
+
+/* Link Styles */
+.link-text {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}
+
+.link-text a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+}

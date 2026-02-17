@@ -1,0 +1,15 @@
+.footer-container {
+  /* BACKGROUND DIHAPUS / TRANSPARAN */
+  background-color: transparent; 
+  
+  /* Warna teks abu-abu agar tidak terlalu mencolok tapi tetap terbaca */
+  color: #666; 
+  
+  text-align: center;
+  padding: 30px 20px; /* Padding sedikit diperbesar biar lega */
+  width: 100%;
+  
+  /* Pastikan font tidak terlalu besar */
+  font-size: 0.85rem;
+  letter-spacing: 1px; /* Sedikit jarak antar huruf biar elegan */
+}

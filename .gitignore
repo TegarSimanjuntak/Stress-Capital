@@ -1,0 +1,14 @@
+# Abaikan semua folder node_modules di mana saja
+**/node_modules/
+
+# Abaikan file build/dist
+dist/
+build/
+
+# Abaikan file environment/rahasia
+.env
+.env.local
+
+# File log
+npm-debug.log*
+yarn-error.log*

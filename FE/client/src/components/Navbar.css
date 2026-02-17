@@ -1,0 +1,132 @@
+/* Container Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Menu tetap jadi pusat gravitasi */
+  padding: 15px 40px;
+  
+  background-color: transparent !important; 
+  box-shadow: none;
+  
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box; 
+}
+
+/* === 1. BAGIAN KIRI (LOGO) === */
+.nav-brand {
+  position: absolute; /* Lepas dari aliran tengah */
+  left: 40px;         /* Mentok Kiri */
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Jarak icon ke tulisan */
+}
+
+.brand-logo {
+  width: 40px; /* Ukuran logo kecil di navbar */
+  height: auto;
+  object-fit: contain;
+}
+
+.brand-text {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700; /* Bold */
+  color: white;
+  letter-spacing: -0.5px;
+}
+
+/* === 2. BAGIAN TENGAH (MENU) === */
+.nav-links {
+  display: flex;
+  gap: 60px; /* Jarak antar menu */
+  align-items: center;
+}
+
+/* Gaya Tulisan Menu */
+.nav-item {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  color: #d8b4fe;
+}
+
+.nav-item.active {
+  color: #a855f7;
+  font-weight: bold;
+}
+
+/* Tombol Payment */
+.btn-payment {
+  background-color: #3b1d47;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid #5e3a70;
+  transition: all 0.3s;
+  letter-spacing: 0.5px;
+}
+
+.btn-payment:hover {
+  background-color: #5e3a70;
+  transform: translateY(-2px);
+}
+
+/* === 3. BAGIAN KANAN (LOGOUT) === */
+.btn-logout {
+  position: absolute; /* Lepas dari aliran tengah */
+  right: 40px;        /* Mentok Kanan */
+  
+  background: transparent;
+  color: #ff4d4d;
+  border: 1px solid #ff4d4d;
+  padding: 6px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background 0.3s;
+}
+
+.btn-logout:hover {
+  background: #ff4d4d;
+  color: white;
+}
+
+/* Responsif: HP */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+    position: relative; /* Balik ke normal flow di HP */
+  }
+  
+  .nav-brand {
+    position: relative;
+    left: auto;
+    margin-bottom: 20px;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .btn-logout {
+    position: relative;
+    right: auto;
+    margin-top: 20px;
+  }
+}
